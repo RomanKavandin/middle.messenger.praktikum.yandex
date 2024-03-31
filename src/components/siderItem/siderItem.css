@@ -1,0 +1,39 @@
+.sideItemContainer {
+  height: 70px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.name {
+  width: 193px;
+  height: 13px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.preview {
+  width: 193px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.time {
+  width: 25px;
+  height: 13px;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 13px;
+}
+
+.counter {
+  background-color: #3369F3;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
