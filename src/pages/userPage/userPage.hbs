@@ -1,0 +1,14 @@
+<div class="user_page_container">
+    <Form class="user_page_form">
+        <div class="registration">Регистрация</div>
+        {{> UserPageInput label="Почта" title="login"}}
+        {{> UserPageInput label="Логин" title="password"}}
+        {{> UserPageInput label="Имя" title="first_name"}}
+        {{> UserPageInput label="Фамилия" title="second_name"}}
+        {{> UserPageInput label="Имя в чате" title="nickname"}}
+        {{> UserPageInput label="Телефон" title="phone"}}
+        <div class="buttons">
+            {{> Button label="Сохранить" type="primary" }}
+        </div>
+    </Form>
+</div>

@@ -1,0 +1,26 @@
+.user_page_input__wrapper {
+    box-sizing: border-box;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EAEAEA;
+    width: 100%;
+}
+
+.user_page_input__label {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    vertical-align: middle;
+    padding-block-end: 1px;
+    color: #1E1E1E;
+}
+
+.user_page_input__field {
+    border: none;
+    outline: none;
+    padding: 0;
+    text-align: right;
+    color: #999999;
+}

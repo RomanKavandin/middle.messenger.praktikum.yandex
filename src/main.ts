@@ -10,7 +10,8 @@ const pages = {
   'notFound': [ Pages.ErrorPage, {code: 404, message: 'Не туда попали'} ],
   'serverError': [ Pages.ErrorPage, {code: 500, message: 'Мы уже фиксим'} ],
   'chat': [ Pages.ChatPage, {code: 500, message: 'Мы уже фиксим'} ],
-  'nav': [ Pages.NavigatePage ]
+  'nav': [ Pages.NavigatePage ],
+  'userPage': [ Pages.UserPage ]
 };
 
 Object.entries(Components).forEach(([ name, component ]) => {
