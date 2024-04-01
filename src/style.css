@@ -1,8 +1,12 @@
 :root {
-    --main-color: #3369f3;
-    --second-color: #e4edfd;
-    --error-color: #ff2f2f;
-    --text-color: #1e1e1e;
-    --text-secondary-color: #999;
-    font-family: "Inter", Calibri, Tahoma, sans-serif;
+  /*colors*/
+  --main-color: #3369f3;
+  --second-color: #e4edfd;
+  --error-color: #ff2f2f;
+  --text-color: #1e1e1e;
+  --text-secondary-color: #999;
+  --text-danger-color: #ff0000;
+  --borders-primary-color: #eaeaea;
+  /*other*/
+  font-family: "Inter", Calibri, Tahoma, sans-serif;
 }

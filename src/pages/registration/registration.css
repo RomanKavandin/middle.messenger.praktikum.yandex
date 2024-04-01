@@ -1,27 +1,27 @@
 .container {
-    display: flex;
-    justify-content: center;
-    margin-block-start: 10vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
 }
 
-.registration {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 500;
-    margin-block-end: 40px;
-    align-self: center;
+.header {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  align-self: center;
 }
 
 .registration-form {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 30px 30px;
-    width: 340px;
-    height: 615px;
-    box-shadow: 0 0 6px 0 #00000024;
-    border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px 30px;
+  width: 340px;
+  height: 615px;
+  box-shadow: 0 0 6px 0 #00000024;
+  border-radius: 12px;
 }
 
 .buttons {
-    margin-block-start: 50px;
+  margin-top: 50px;
 }

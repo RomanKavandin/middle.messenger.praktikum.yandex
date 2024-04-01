@@ -1,13 +1,35 @@
-.user_page_container {
-    height: 100vh;
-    display: flex;
+.user_page__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.user_page_form {
-    margin-block-start: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 510px;
-    margin-inline: auto;
+.user_page__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 510px;
+  margin-top: 60px;
+  margin-inline: auto;
+}
+
+.user_page__user_image_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #efefef;
+}
+
+.user_page__buttons {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.user_page__input__last {
+  border-bottom: none;
 }

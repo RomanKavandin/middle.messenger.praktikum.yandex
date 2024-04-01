@@ -1,14 +1,31 @@
-<div class="user_page_container">
-    <Form class="user_page_form">
-        <div class="registration">Регистрация</div>
-        {{> UserPageInput label="Почта" title="login"}}
-        {{> UserPageInput label="Логин" title="password"}}
-        {{> UserPageInput label="Имя" title="first_name"}}
-        {{> UserPageInput label="Фамилия" title="second_name"}}
-        {{> UserPageInput label="Имя в чате" title="nickname"}}
-        {{> UserPageInput label="Телефон" title="phone"}}
-        <div class="buttons">
-            {{> Button label="Сохранить" type="primary" }}
-        </div>
+<div class="user_page__container">
+    <div class="user_page__user_image_container">
+        <object data="./src/assets/icons/no_image.svg"  width="40" height="40"> </object>
+    </div>
+
+    {{#unless isEditing}}
+        <span>
+            ПЕТУХ
+        </span>
+    {{/unless}}
+
+    <Form class="user_page__form">
+        {{#each (userPageFields)}}
+            {{> UserPageInput}}
+        {{/each}}
+
+        {{#if isEditing}}
+            <div class="user_page__buttons">
+                {{> Button label="Сохранить" type="primary" }}
+            </div>
+        {{/if}}
+
+        {{#unless isEditing}}
+            <div class="user_page__buttons">
+                {{> Button label="Изменить данные" type="link__input_like" }}
+                {{> Button label="Изменить пароль" type="link__input_like" }}
+                {{> Button label="Выйти" type="link__input_like" danger=true }}
+            </div>
+        {{/unless}}
     </Form>
 </div>
