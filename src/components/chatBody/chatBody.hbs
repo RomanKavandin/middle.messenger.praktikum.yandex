@@ -1,0 +1,10 @@
+<div class="side__container">
+    <div class="side__search">
+        <span class="side__profile">Профиль ></span>
+        <input class="side-search__input" placeholder="Поиск"/>
+    </div>
+
+    {{#each (chatItems)}}
+        {{>SiderItem}}
+    {{/each}}
+</div>

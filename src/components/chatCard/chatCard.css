@@ -1,0 +1,9 @@
+.chat-body__container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-body__empty-state {
+  margin: auto;
+}

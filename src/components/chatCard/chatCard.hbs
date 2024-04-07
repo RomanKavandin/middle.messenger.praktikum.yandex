@@ -1,0 +1,14 @@
+<div class="chat-body__container">
+    {{#if isEmpty}}
+        <div class="chat-body__empty-state">Выберите чат, чтобы отправить сообщение</div>
+    {{/if}}
+
+    {{#unless isEmpty}}
+        {{#each (chatCard)}}
+            {{> ChatCard}}
+        {{/each}}
+    {{/unless}}
+
+
+
+</div>

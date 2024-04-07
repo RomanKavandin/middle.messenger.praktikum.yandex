@@ -1,0 +1,16 @@
+<div class="user_page_input__wrapper {{outerClasses}}">
+  <label class="user_page_input__label" for="{{title}}">
+    {{label}}
+  </label>
+    {{#if isEditing}}
+        <input
+                class="user_page_input__field"
+                placeholder="placeholder"
+                name="{{title}}"
+                title="{{title}}"
+        />
+    {{/if}}
+    {{#unless isEditing}}
+        <span class="user_page_input__field">{{value}}</span>
+    {{/unless}}
+</div>
