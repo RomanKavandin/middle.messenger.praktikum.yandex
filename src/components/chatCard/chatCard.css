@@ -1,9 +1,47 @@
-.chat-body__container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+.chat-card {
+  color: #1E1E1E;
+  width: 380px;
+  padding: 11px;
+  margin-top: 30px;
+  border-radius: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  position: relative;
 }
 
-.chat-body__empty-state {
-  margin: auto;
+.chat-card__sent {
+  background-color: #E4EDFD;
+  margin-left: auto;
+  border-bottom-right-radius: 0;
+}
+
+.chat-card__received {
+  border-top-left-radius: 0;
+  background-color: #F8F8F8;
+  margin-right: auto
+}
+
+.chat-card__tick {
+  position: absolute;
+  bottom: 11px;
+  right: 35px;
+}
+
+.chat-card__time {
+  font-size: 9px;
+  line-height: 9px;
+  color: #999999;
+  text-align: right;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.chat-card__time__sent {
+  color: #3369F3
+}
+
+.chat-card__time__seen {
+  font-size: 9px;
+  line-height: 9px;
 }

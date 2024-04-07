@@ -4,6 +4,12 @@
   margin-top: 10vh;
 }
 
+.container__login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+}
+
 .header {
   font-size: 20px;
   line-height: 20px;
@@ -15,13 +21,19 @@
 .registration-form {
   display: flex;
   flex-direction: column;
-  padding: 50px 30px 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  padding-bottom: 10px;
   width: 340px;
   height: 615px;
   box-shadow: 0 0 6px 0 #00000024;
   border-radius: 12px;
 }
+.registration-form__login {
+  height: 450px;
+}
 
 .buttons {
-  margin-top: 50px;
+  margin-top: auto;
 }

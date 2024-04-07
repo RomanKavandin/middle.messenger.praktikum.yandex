@@ -1,39 +1,102 @@
-.side__container {
+.chat_body__container {
   display: flex;
   flex-direction: column;
-  height: auto;
-  width: 310px;
-  background-color: var(--background-gray);
-  border-right: 1px solid var(--borders-primary-color);
-  padding: 10px;
-  padding-top: 0;
+  height: 100vh;
+  width: 100%;
+  padding-inline: 20px;
+  position: relative;
 }
 
-.side__search {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  height: 102px;
-  width: 290px;
-  justify-content: space-between;
-  padding-top: 21px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--borders-primary-color);
-}
-
-.side-search__input {
-  border: none;
-  text-align: center;
-  box-shadow: none;
-  width: 290px;
-  height: 32px;
-  border-radius: 5px;
-  background-color: #EFEFEF;
-}
-
-.side__profile {
+.chat_body__state {
+  margin: auto;
   color: #999999;
-  text-align: right;
   font-size: 12px;
-  line-height: 12px;
+}
+
+.chat_body__block-date {
+
+}
+
+.chat_body__block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.chat_body__rest_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 54px;
+  padding-block: 10px;
+}
+
+.chat_body__header {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.chat_body__footer {
+  margin-top: auto;
+  border-top: 1px solid #eaeaea;
+}
+
+.chat_body__user_image {
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  background-color: #efefef;
+}
+
+.chat_body__user_name {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.chat_body__button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.chat_body__button__dots svg {
+  margin-left: auto;
+  width: 20px;
+  height: 30px;
+}
+
+.chat_body__button__dots:hover {
+  background-color: #E4EDFD;
+}
+
+.chat_body__button__dots svg {
+  cursor: pointer;
+}
+
+.chat_body__button__clip:hover {
+  border-radius: 10px;
+  background-color: #E4EDFD;
+  width: 40px;
+  height: 40px;
+}
+
+.chat_body__button__send {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.chat_body__input {
+  width: 850px;
+  height: 32px;
+  border: none;
+  border-radius: 30px;
+  background-color: #EFEFEF;
+  padding-inline: 20px;
 }

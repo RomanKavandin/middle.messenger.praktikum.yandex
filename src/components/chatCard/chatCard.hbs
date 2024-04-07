@@ -1,14 +1,7 @@
-<div class="chat-body__container">
-    {{#if isEmpty}}
-        <div class="chat-body__empty-state">Выберите чат, чтобы отправить сообщение</div>
+<div class="chat-card chat-card__{{type}}">
+    <div>{{message}}</div>
+    {{#if seen}}
+        <object class="chat-card__tick" data="./src/assets/icons/tick.svg" width="9" height="4"> </object>
     {{/if}}
-
-    {{#unless isEmpty}}
-        {{#each (chatCard)}}
-            {{> ChatCard}}
-        {{/each}}
-    {{/unless}}
-
-
-
+    <div class="chat-card__time chat-card__time__{{type}}">{{time}}</div>
 </div>

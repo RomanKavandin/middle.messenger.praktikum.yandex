@@ -1,4 +1,10 @@
-<!--<div class="card {{#if active}}card_active{{/if}}">-->
-<div class="sideContainer">
-  {{SiderItem}}
+<div class="side__container">
+    <div class="side__search">
+        <span class="side__profile">Профиль ></span>
+        <input class="side-search__input" placeholder="Поиск"/>
+    </div>
+
+    {{#each (chatSideItems)}}
+        {{>SiderItem}}
+    {{/each}}
 </div>

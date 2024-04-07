@@ -7,6 +7,15 @@
   --text-secondary-color: #999;
   --text-danger-color: #ff0000;
   --borders-primary-color: #eaeaea;
+  --background-gray: #fbfbfb;
   /*other*/
+}
+
+* {
+  box-sizing: border-box;
   font-family: "Inter", Calibri, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
 }

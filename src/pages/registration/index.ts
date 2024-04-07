@@ -15,3 +15,9 @@ Handlebars.registerHelper("registrationFields", () => {
     { label: "Пароль (ещё раз)", title: "password" },
   ];
 });
+Handlebars.registerHelper("loginFields", () => {
+  return [
+    { label: "Логин", title: "login" },
+    { label: "Пароль", title: "password" },
+  ];
+});

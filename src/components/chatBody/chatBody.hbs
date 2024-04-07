@@ -1,10 +1,33 @@
-<div class="side__container">
-    <div class="side__search">
-        <span class="side__profile">Профиль ></span>
-        <input class="side-search__input" placeholder="Поиск"/>
-    </div>
+<div class="chat_body__container">
+    {{#if isEmpty}}
+        <div class="chat_body__state">Выберите чат, чтобы отправить сообщение</div>
+    {{/if}}
 
-    {{#each (chatItems)}}
-        {{>SiderItem}}
-    {{/each}}
+    {{#unless isEmpty}}
+        <div class="chat_body__rest_container chat_body__header">
+            <div class="chat_body__user_image"></div>
+            <div class="chat_body__user_name">{{person}}</div>
+            <button class="chat_body__button__dots chat_body__button">
+                <img src="./src/assets/icons/dots.svg" width="3" height="15"/>
+            </button>
+        </div>
+        <div class="chat_body__block">
+            <div class="chat_body__state">
+                {{date}}
+            </div>
+            {{#each (chatCards)}}
+                {{> ChatCard}}
+            {{/each}}
+        </div>
+
+        <div class="chat_body__rest_container chat_body__footer">
+            <button class="chat_body__button__clip chat_body__button">
+                <img src="./src/assets/icons/clip.svg" width="32" height="32"/>
+            </button>
+            <input class="chat_body__input" placeholder="Сообщение"/>
+            <button class="chat_body__button__send chat_body__button">
+                <img src="./src/assets/icons/send.svg" width="28" height="28"/>
+            </button>
+        </div>
+    {{/unless}}
 </div>

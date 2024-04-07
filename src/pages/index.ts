@@ -1,7 +1,6 @@
-export { LoginPage } from "./login";
+export { RegistrationPage } from "./registration";
 export { ListPage } from "./list";
 export { NavigatePage } from "./navigate";
 export { ErrorPage } from "./error";
 export { ChatPage } from "./chat";
-export { RegistranionPage } from "./registration";
 export { UserPage } from "./userPage";

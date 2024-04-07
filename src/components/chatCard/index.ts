@@ -1,2 +1,2 @@
-import "./sider.css";
-export { default as ChatBody } from "./chatBody.css";
+import "./chatCard.css";
+export { default as ChatCard } from "./chatCard.hbs?raw";
