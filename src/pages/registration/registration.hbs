@@ -1,24 +1,27 @@
-<div class="container">
-    <Form class="registration-form {{#if isLogin}}registration-form__login{{/if}}">
-        <div class="header">Регистрация</div>
+<div class="registration__container">
+    <Form class="registration__form {{#if isLogin}}registration__form__login{{/if}}">
+
         {{#if isRegistration}}
+            <div class="registration__header">Регистрация</div>
             {{#each (registrationFields)}}
                 {{> Input}}
             {{/each}}
-            <div class="buttons">
+            <div class="registration__buttons">
                 {{> Button label="Зарегистрироваться" type="primary" }}
                 {{> Button label="Войти" type="link" }}
             </div>
         {{/if}}
 
         {{#if isLogin}}
+            <div class="registration__header">Вход</div>
             {{#each (loginFields)}}
                 {{> Input}}
             {{/each}}
-            <div class="buttons">
+            <div class="registration__buttons">
                 {{> Button label="Авторизоваться" type="primary" }}
                 {{> Button label="Нет аккаунта?" type="link" }}
             </div>
         {{/if}}
+
     </Form>
 </div>

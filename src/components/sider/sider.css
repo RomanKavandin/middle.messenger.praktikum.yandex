@@ -33,11 +33,11 @@
   width: 290px;
   height: 32px;
   border-radius: 5px;
-  background-color: #efefef;
+  background-color: var(--background-primary);
 }
 
 .side__profile {
-  color: #999999;
+  color: var(--text-secondary-light);
   text-align: right;
   font-size: 12px;
   line-height: 12px;

@@ -1,5 +1,5 @@
 .chat-card {
-  color: #1E1E1E;
+  color: var(--text-color-dark);
   width: 380px;
   padding: 11px;
   margin-top: 30px;
@@ -10,7 +10,7 @@
 }
 
 .chat-card__sent {
-  background-color: #E4EDFD;
+  background-color: var(--bacground-blue);
   margin-left: auto;
   border-bottom-right-radius: 0;
 }
@@ -30,7 +30,7 @@
 .chat-card__time {
   font-size: 9px;
   line-height: 9px;
-  color: #999999;
+  color: var(--text-secondary-light);
   text-align: right;
   position: absolute;
   bottom: 10px;
@@ -38,7 +38,7 @@
 }
 
 .chat-card__time__sent {
-  color: #3369F3
+  color: var(--main-blue)
 }
 
 .chat-card__time__seen {

@@ -7,7 +7,6 @@ Handlebars.registerHelper("registrationFields", () => {
     { label: "Почта", title: "login" },
     { label: "Логин", title: "password" },
     { label: "Имя", title: "first_name" },
-    { label: "Почта", title: "login" },
     { label: "Фамилия", title: "second_name" },
     { label: "Электронная почта", title: "email" },
     { label: "Телефон", title: "phone" },

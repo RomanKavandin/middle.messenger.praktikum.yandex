@@ -6,7 +6,6 @@ import { baseChat } from "./constants/const";
 const pages = {
   login: [Pages.RegistrationPage, { isLogin: true }],
   registration: [Pages.RegistrationPage, { isRegistration: true }],
-  list: [Pages.ListPage],
   notFound: [Pages.ErrorPage, { code: 404, message: "Не туда попали" }],
   serverError: [Pages.ErrorPage, { code: 500, message: "Мы уже фиксим" }],
   chat: [Pages.ChatPage, baseChat],

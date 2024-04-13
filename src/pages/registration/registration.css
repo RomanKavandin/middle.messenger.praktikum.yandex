@@ -1,4 +1,4 @@
-.container {
+.registration__container {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
@@ -10,7 +10,7 @@
   margin-top: 10vh;
 }
 
-.header {
+.registration__header {
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -18,7 +18,7 @@
   align-self: center;
 }
 
-.registration-form {
+.registration__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,10 +30,11 @@
   box-shadow: 0 0 6px 0 #00000024;
   border-radius: 12px;
 }
-.registration-form__login {
+
+.registration__form__login {
   height: 450px;
 }
 
-.buttons {
+.registration__buttons {
   margin-top: auto;
 }

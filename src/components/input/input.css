@@ -12,7 +12,7 @@
 
 .input__label {
   transform: translateY(-21px);
-  color: var(--text-secondary-color);
+  color: var(--text-secondary-light);
   font-size: 13px;
   font-weight: 500;
   user-select: none;
@@ -23,12 +23,12 @@
 
 .input__element {
   border: none;
-  padding: 0%;
-  border-bottom: 1px solid var(--main-color);
+  padding: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--main-blue);
   font-size: 13px;
   font-weight: 500;
-  color: var(--text-color);
-  padding-bottom: 7px;
+  color: var(--text-color-dark);
 }
 
 .input__element:focus-visible {

@@ -1,7 +1,5 @@
 export { Button } from "./button";
 export { Input } from "./input";
-export { ListCat } from "./list-cats";
-export { CatCard } from "./cat-card";
 export { UserPageInput } from "./userPageInput";
 export { UserPageInputData } from "./userPageInput";
 export { Sider } from "./sider";

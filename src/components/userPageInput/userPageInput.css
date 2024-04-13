@@ -1,5 +1,6 @@
 .user_page_input__wrapper {
-  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 13px;
   height: 35px;
   display: flex;
   justify-content: space-between;
@@ -10,19 +11,15 @@
 
 .user_page_input__label {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 13px;
   vertical-align: middle;
   padding-bottom: 1px;
-  color: #1e1e1e;
+  color: var(--text-color-dark);
 }
 
 .user_page_input__field {
-  font-size: 13px;
-  line-height: 13px;
   border: none;
   outline: none;
   padding: 0;
   text-align: right;
-  color: #999999;
+  color: var(--text-secondary-light);
 }
