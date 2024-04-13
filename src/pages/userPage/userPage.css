@@ -13,7 +13,7 @@
   margin-inline: auto;
 }
 
-.user_page__user_image_container {
+.user_page__avatar__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,6 +23,28 @@
   width: 130px;
   border-radius: 50%;
   background-color: #efefef;
+  position: relative;
+  cursor: pointer;
+}
+
+.user_page__avatar__change {
+  display: none;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 500;
+  position: absolute;
+  text-align: center;
+  padding-top: 50px;
+  padding-inline: 33px;
+  color: #FFFFFF;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.user_page__avatar__container:hover .user_page__avatar__change {
+  display: block;
 }
 
 .user_page__buttons_container {

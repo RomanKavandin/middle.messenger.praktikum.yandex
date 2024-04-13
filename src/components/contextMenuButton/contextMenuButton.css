@@ -1,0 +1,12 @@
+.context-menu__button {
+  display: flex;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  border: none;
+  background-color: unset;
+}
+
+.context-menu__button img {
+  margin-right: 10px;
+}

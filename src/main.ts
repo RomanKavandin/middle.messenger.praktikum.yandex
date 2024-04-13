@@ -1,6 +1,7 @@
 import Handlebars from "handlebars";
 import * as Components from "./components";
 import * as Pages from "./pages";
+import { baseChat } from "./constants/const";
 
 const pages = {
   login: [Pages.RegistrationPage, { isLogin: true }],
@@ -8,10 +9,42 @@ const pages = {
   list: [Pages.ListPage],
   notFound: [Pages.ErrorPage, { code: 404, message: "Не туда попали" }],
   serverError: [Pages.ErrorPage, { code: 500, message: "Мы уже фиксим" }],
-  chat: [Pages.ChatPage, { isEmpty: false, person: "Вадим", date: "19 июня" }],
+  chat: [Pages.ChatPage, baseChat],
+  chatAddUser: [
+    Pages.ChatPage,
+    {
+      ...baseChat,
+      popUp: {
+        title: "Добавить пользователя",
+        fields: [{ label: "Логин", title: "login" }],
+        buttons: [{ label: "Добавить", type: "primary" }],
+      },
+    },
+  ],
+  chatRemoveUser: [
+    Pages.ChatPage,
+    {
+      ...baseChat,
+      popUp: {
+        title: "Удалить пользователя",
+        fields: [{ label: "Логин", title: "login" }],
+        buttons: [{ label: "Удалить", type: "primary" }],
+      },
+    },
+  ],
   chatEmpty: [Pages.ChatPage, { isEmpty: true }],
   nav: [Pages.NavigatePage],
-  userPage: [Pages.UserPage, { isEditing: false }],
+  userPage: [
+    Pages.UserPage,
+    {
+      isEditing: false,
+      popUp: {
+        title: "Добавить пользователя",
+        fields: [{ label: "Логин", title: "login" }],
+        buttons: [{ label: "Добавить", type: "primary" }],
+      },
+    },
+  ],
   userPageEdit: [Pages.UserPage, { isEditing: true }],
 };
 
@@ -27,7 +60,6 @@ function navigate(page: string) {
 }
 
 Handlebars.registerHelper("loginInputFields", () => {
-  console.log("loginInputFields");
   return [
     { label: "Логин", title: "login" },
     { label: "Пароль", title: "password" },

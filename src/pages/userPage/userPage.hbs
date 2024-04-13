@@ -1,6 +1,13 @@
 <div class="user_page__container">
 
-    <div class="user_page__user_image_container">
+    {{>Sider hidden=true}}
+
+    {{#if popUp}}
+        {{>PopUpForm}}
+    {{/if}}
+
+    <div class="user_page__avatar__container">
+        <div class="user_page__avatar__change">Поменять аватар</div>
         <object data="./src/assets/icons/no_image.svg"  width="40" height="40"> </object>
     </div>
 

@@ -1,14 +1,30 @@
-.side-item__container {
+.side_item__container {
   display: flex;
   height: 70px;
-  border-bottom: 1px solid var(--borders-primary-color);
   padding-top: 12px;
+  padding-inline: 10px;
+  position: relative;
+}
+
+.side_item__container::after {
+  content: "";
+  width: 1px;
+  height: 290px;
+  background-color: var(--borders-primary-color);
+  rotate: 90deg;
+  position: absolute;
+  bottom: -75px;
+  left: 155px;
+}
+
+.side_item__container__selected {
+  background-color: #e4edfd;
 }
 
 .side-item__avatar {
   width: 50px;
   height: 50px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   border-radius: 50px;
 }
 
@@ -36,7 +52,7 @@
   line-height: 15px;
   margin-top: 5px;
   color: #999999;
-  white-space:nowrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -58,7 +74,7 @@
 
 .side-item__counter {
   font-size: 11px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #3369f3;
   border-radius: 50%;
   width: 20px;

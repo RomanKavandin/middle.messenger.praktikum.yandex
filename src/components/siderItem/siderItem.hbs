@@ -1,20 +1,22 @@
-<div class="side-item__container">
-    <div class="side-item__avatar">
+<div class="side_item__container {{#if isOpen}}side_item__container__selected {{/if}}">
+  <div class="side-item__avatar">
+  </div>
+  <div class="side-item__message-container">
+    <div class="side-item__name">
+      {{name}}
     </div>
-    <div class="side-item__message-container" >
-        <div class="side-item__name">
-            {{name}}
-        </div>
-        <div class="side-item__preview">
-            {{preview}}
-        </div>
+    <div class="side-item__preview">
+      {{preview}}
     </div>
-    <div class="side-item__counter-container">
-        <div class="side-item__time">
-            {{time}}
-        </div>
-        <div class="side-item__counter">
-            {{counter}}
-        </div>
+  </div>
+  <div class="side-item__counter-container">
+    <div class="side-item__time">
+      {{time}}
     </div>
+    {{#if counter}}
+      <div class="side-item__counter">
+        {{counter}}
+      </div>
+    {{/if}}
+  </div>
 </div>

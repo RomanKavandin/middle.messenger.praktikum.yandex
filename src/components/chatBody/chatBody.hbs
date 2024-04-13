@@ -2,7 +2,6 @@
     {{#if isEmpty}}
         <div class="chat_body__state">Выберите чат, чтобы отправить сообщение</div>
     {{/if}}
-
     {{#unless isEmpty}}
         <div class="chat_body__rest_container chat_body__header">
             <div class="chat_body__user_image"></div>
@@ -10,6 +9,7 @@
             <button class="chat_body__button__dots chat_body__button">
                 <img src="./src/assets/icons/dots.svg" width="3" height="15"/>
             </button>
+            {{>ContextMenuManageUser}}
         </div>
         <div class="chat_body__block">
             <div class="chat_body__state">
@@ -19,8 +19,8 @@
                 {{> ChatCard}}
             {{/each}}
         </div>
-
         <div class="chat_body__rest_container chat_body__footer">
+            {{>ContextMenuAttach}}
             <button class="chat_body__button__clip chat_body__button">
                 <img src="./src/assets/icons/clip.svg" width="32" height="32"/>
             </button>

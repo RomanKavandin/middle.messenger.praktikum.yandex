@@ -35,11 +35,13 @@
 .chat_body__header {
   margin-bottom: 50px;
   border-bottom: 1px solid #eaeaea;
+  position: relative;
 }
 
 .chat_body__footer {
   margin-top: auto;
   border-top: 1px solid #eaeaea;
+  position: relative;
 }
 
 .chat_body__user_image {
@@ -93,7 +95,7 @@
 }
 
 .chat_body__input {
-  width: 850px;
+  width: 100%;
   height: 32px;
   border: none;
   border-radius: 30px;

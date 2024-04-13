@@ -1,0 +1,42 @@
+.context-menu__window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 10px;
+  border-radius: 12px;
+  padding-top: 15px;
+  padding-bottom: 4px;
+  box-shadow: 0 0 6px 0 #00000024;
+;
+}
+
+.context-menu__button {
+  display: flex;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  border: none;
+  background-color: unset;
+  margin-bottom: 7px;
+  padding-inline: 15px;
+  padding-block: 5px;
+}
+
+.context-menu__button:hover {
+  background-color: #E4EDFD;
+}
+
+.context-menu__button img {
+  margin-right: 10px;
+}
+
+.context-menu__window__manage {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+.context-menu__window__attach {
+  position: absolute;
+  bottom: 60px;
+}

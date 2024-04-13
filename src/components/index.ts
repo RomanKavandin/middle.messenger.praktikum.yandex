@@ -8,3 +8,7 @@ export { Sider } from "./sider";
 export { SiderItem } from "./siderItem";
 export { ChatBody } from "./chatBody";
 export { ChatCard } from "./chatCard";
+export { ContextMenuAttach } from "./contextMenu/contextMenu";
+export { ContextMenuManageUser } from "./contextMenu/contextMenu";
+export { ContextMenuButton } from "./contextMenuButton";
+export { PopUpForm } from "./popUpForm";

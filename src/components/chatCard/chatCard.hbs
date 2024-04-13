@@ -1,4 +1,4 @@
-<div class="chat-card chat-card__{{type}}">
+<div class="chat-card chat-card__{{type}} {{#if selected}} chat-card__selected {{/if}}">
     <div>{{message}}</div>
     {{#if seen}}
         <object class="chat-card__tick" data="./src/assets/icons/tick.svg" width="9" height="4"> </object>

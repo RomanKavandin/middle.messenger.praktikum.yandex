@@ -1,5 +1,7 @@
 
 <div class="chatContainer">
-    {{>Sider}}
-    {{>ChatBody}}
+    {{#if popUp}}
+        {{>PopUpForm}}
+    {{/if}}
+1    {{>ChatBody}}
 </div>
