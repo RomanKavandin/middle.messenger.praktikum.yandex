@@ -17,8 +17,8 @@
 
 .chat-card__received {
   border-top-left-radius: 0;
-  background-color: #F8F8F8;
-  margin-right: auto
+  background-color: #f8f8f8;
+  margin-right: auto;
 }
 
 .chat-card__tick {
@@ -38,7 +38,7 @@
 }
 
 .chat-card__time__sent {
-  color: var(--main-blue)
+  color: var(--main-blue);
 }
 
 .chat-card__time__seen {
