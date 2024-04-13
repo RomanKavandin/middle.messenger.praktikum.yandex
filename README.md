@@ -4,7 +4,7 @@ https://github.com/RomanKavandin/middle.messenger.praktikum.yandex/pull/1
 
 Учебный проект для курса "middle frontend" от Яндекс.Практикума
 
-https://sprightly-selkie-022d2e.netlify.app
+https://tgdoma.netlify.app
 
 ### Запуск проекта
 
@@ -25,3 +25,8 @@ https://sprightly-selkie-022d2e.netlify.app
 ```sh
     npm run start
 ```
+
+### Далее
+
+Можно ходить по ссылкам -- в каждой из них кусок вёрстки из макета
+Для возврата к навигации обновите страницу

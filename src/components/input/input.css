@@ -40,17 +40,13 @@
   color: var(--error-color);
   font-size: 8px;
   font-weight: 400;
-  display: none;
+  margin-top: 5px;
 }
 
 .input__element:not(:placeholder-shown) + .input__label,
 .input__element:focus + .input__label {
   transform: translateY(-36px);
   font-size: 9px;
-}
-
-.input__error .input__text-error {
-  display: block;
 }
 
 .input__error .input__element {

@@ -1,6 +1,9 @@
 <div class="input">
-  <label class="input__container">
+  <label class="input__container {{#if errorText}}input__error{{/if}}" >
     <input class="input__element" placeholder="" title="{{title}}" />
     <div class="input__label">{{label}}</div>
   </label>
+    {{#if errorText}}
+        <div class="input__text-error">{{errorText}}</div>
+    {{/if}}
 </div>

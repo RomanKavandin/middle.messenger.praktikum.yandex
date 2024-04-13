@@ -2,7 +2,7 @@
     <div class="pop-up__body">
         {{#with popUp}}
 
-            <div class="pop-up__title pop-up__title__{{danger}}">
+            <div class="pop-up__title {{#if danger}}pop-up__title__danger{{/if}}">
                 {{title}}
             </div>
 
@@ -19,6 +19,11 @@
             {{#each buttons}}
                 {{> Button }}
             {{/each}}
+
+            {{#if errorMessage}}
+                <div class="pop-up__error_message">{{errorMessage}}</div>
+            {{/if}}
+
         {{/with}}
     </div>
 </div>
