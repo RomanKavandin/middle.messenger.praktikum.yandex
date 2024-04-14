@@ -1,0 +1,9 @@
+
+.navigation__list {
+  padding: 30px;
+}
+
+.navigation__item {
+  display: block;
+  margin-bottom: 10px;
+}
