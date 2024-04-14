@@ -32,6 +32,7 @@
 
 .user_page__avatar__change {
   display: none;
+  border: none;
   font-size: 13px;
   line-height: 14px;
   font-weight: 500;
@@ -44,6 +45,10 @@
   width: 130px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+input.user_page__avatar__change {
+  background: none;
 }
 
 .user_page__buttons_container {

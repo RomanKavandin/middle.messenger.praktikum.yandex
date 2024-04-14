@@ -7,7 +7,8 @@ Handlebars.registerHelper("userPageFields", () => {
     { label: "Почта", title: "email", value: "pochta@yandex.ru" },
     { label: "Логин", title: "login", value: "ivanivanov" },
     { label: "Имя", title: "first_name", value: "Иван" },
-    { label: "Имя в чате", title: "nickname", value: "Индивидуалка Диана" },
+    { label: "Фамилия", title: "second_name", value: "Иванов" },
+    { label: "Имя в чате", title: "display_name", value: "Индивидуалка Диана" },
     {
       label: "Телефон",
       title: "phone",
