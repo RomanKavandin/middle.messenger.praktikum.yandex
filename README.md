@@ -1,10 +1,12 @@
-https://github.com/RomanKavandin/middle.messenger.praktikum.yandex/pull/1
+ссылка на PR: https://github.com/RomanKavandin/middle.messenger.praktikum.yandex/pull/1
+
+ссылка на макет: https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?type=design&node-id=0-1&mode=design&t=t3sRtsFsN83rH3PI-0
+
+ссылка на проект в netlify: https://tgdoma.netlify.app
 
 ### Проект учебный "Телеграм дома".
 
 Учебный проект для курса "middle frontend" от Яндекс.Практикума
-
-https://tgdoma.netlify.app
 
 ### Запуск проекта
 
@@ -26,8 +28,8 @@ https://tgdoma.netlify.app
     npm run start
 ```
 
-### Далее
+### Как пользоваться
 
-Можно ходить по ссылкам -- в каждой из них кусок вёрстки из макета
+Открыть страничку, ходить по ссылкам: в каждой из них кусок вёрстки из макета.
 
-Для возврата к навигации обновите страницу
+Для возврата к навигации обновить страницу
