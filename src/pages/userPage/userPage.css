@@ -1,15 +1,13 @@
-@define-placeholder flex_column_centered {
+.user_page__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.user_page__container {
-  @extend flex_column_centered;
-}
-
 .user_page__form {
-  @extend flex_column_center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 510px;
   margin-top: 60px;
   margin-inline: auto;
@@ -49,7 +47,9 @@
 }
 
 .user_page__buttons_container {
-  @extend flex_column_centered;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 50px;
   width: 100%;
 }
