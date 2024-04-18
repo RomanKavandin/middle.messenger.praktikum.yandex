@@ -1,0 +1,23 @@
+:root {
+  /*colors*/
+  --main-white: #ffffff;
+  --main-blue: #3369f3;
+  --text-color-dark: #1e1e1e;
+  --text-secondary-light: #999999;
+  --text-danger-color: #ff0000;
+  --borders-primary-color: #eaeaea;
+  --background-primary: #efefef;
+  --bacground-blue: #e4edfd;
+  --background-gray: #fbfbfb;
+  --error-color: #ff2f2f;
+  /*other*/
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", Calibri, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+}

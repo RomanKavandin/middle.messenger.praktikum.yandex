@@ -1,0 +1,53 @@
+.pop-up__background {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.pop-up__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 340px;
+  height: 270px;
+  background-color: var(--main-white);
+  border-radius: 12px;
+  padding-inline: 30px;
+  padding-block: 40px;
+}
+
+.pop-up__title {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-color-dark);
+}
+
+.pop-up__title__danger {
+  color: var(--error-color);
+}
+
+.pop-up__title {
+  font-size: 15px;
+}
+
+.pop-up__message {
+  color: #8d8d8d;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.pop-up__error_message {
+  color: var(--error-color);
+  font-size: 11px;
+  line-height: 11px;
+  text-align: center;
+}

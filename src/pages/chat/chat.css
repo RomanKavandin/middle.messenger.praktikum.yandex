@@ -1,0 +1,6 @@
+.chat__container {
+  outline: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}

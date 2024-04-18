@@ -1,0 +1,29 @@
+{
+  "name": "study-project-messenger",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "npm run build && node ./server.js"
+  },
+  "devDependencies": {
+    "cssnano": "^6.1.2",
+    "handlebars": "4.7.8",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^10.1.0",
+    "prettier": "3.2.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-handlebars": "^1.6.0",
+    "postcss-preset-env": "^9.5.5"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": "18.20.2"
+  }
+}

@@ -1,0 +1,21 @@
+.context-menu__window {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 10px;
+  border-radius: 12px;
+  padding-top: 15px;
+  padding-bottom: 4px;
+  box-shadow: 0 0 6px 0 #00000024;
+}
+
+.context-menu__window__manage {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+.context-menu__window__attach {
+  position: absolute;
+  bottom: 60px;
+}

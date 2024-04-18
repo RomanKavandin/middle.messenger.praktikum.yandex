@@ -1,0 +1,38 @@
+.button {
+  background-color: initial;
+  border: none;
+  font-weight: 500;
+  display: block;
+  width: 280px;
+  padding: 12px 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button__primary {
+  background-color: var(--main-blue);
+  color: #fff;
+  font-size: 13px;
+}
+
+.button__link {
+  color: var(--main-blue);
+  font-size: 11px;
+  text-align: center;
+}
+
+.button__link__input_like {
+  color: var(--main-blue);
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--borders-primary-color);
+  border-radius: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.danger {
+  color: var(--text-danger-color);
+  border: none;
+}

@@ -1,0 +1,29 @@
+<div class="pop-up__background">
+    <div class="pop-up__body">
+        {{#with popUp}}
+
+            <div class="pop-up__title {{#if danger}}pop-up__title__danger{{/if}}">
+                {{title}}
+            </div>
+
+            {{#if message }}
+                <div class="pop-up__message">{{message}}</div>
+            {{/if}}
+
+            {{#if fields}}
+                {{#each fields}}
+                    {{> Input}}
+                {{/each}}
+            {{/if}}
+
+            {{#each buttons}}
+                {{> Button }}
+            {{/each}}
+
+            {{#if errorMessage}}
+                <div class="pop-up__error_message">{{errorMessage}}</div>
+            {{/if}}
+
+        {{/with}}
+    </div>
+</div>

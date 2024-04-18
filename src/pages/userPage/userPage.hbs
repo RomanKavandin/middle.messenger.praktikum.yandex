@@ -1,0 +1,53 @@
+<main class="user_page__container">
+
+    {{>Sider hidden=true}}
+
+    {{#if popUp}}
+        {{>PopUpForm}}
+    {{/if}}
+
+    <div class="user_page__avatar__container">
+        <label class="user_page__avatar__change" for="avatar">
+            Поменять аватар
+        </label>
+        <input name="avatar" id="avatar" class="user_page__avatar__change"/>
+        <object data="./src/assets/icons/no_image.svg"  width="40" height="40"> </object>
+    </div>
+
+    {{#unless isEditing}}
+        <span class="user_page__name">
+            Иван
+        </span>
+    {{/unless}}
+
+    <Form class="user_page__form">
+        {{#unless isEditing}}
+            {{#each (userPageFields)}}
+                {{> UserPageInputData}}
+            {{/each}}
+        {{/unless}}
+
+        {{#unless isEditing}}
+            <div class="user_page__buttons_container">
+                {{> Button label="Изменить данные" type="link__input_like" }}
+                {{> Button label="Изменить пароль" type="link__input_like" }}
+                {{> Button label="Выйти" type="link__input_like" danger=true }}
+            </div>
+        {{/unless}}
+
+        <!--        -->
+
+        {{#if isEditing}}
+            {{#each (userPageFields)}}
+                {{> UserPageInput}}
+            {{/each}}
+        {{/if}}
+
+        {{#if isEditing}}
+            <div class="user_page__buttons_container">
+                {{> Button label="Сохранить" type="primary" }}
+            </div>
+        {{/if}}
+
+    </Form>
+</main>

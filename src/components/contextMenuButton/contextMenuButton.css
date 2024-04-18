@@ -1,0 +1,18 @@
+.context-menu__button img {
+  margin-right: 10px;
+}
+
+.context-menu__button {
+  display: flex;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  border: none;
+  background-color: unset;
+  margin-bottom: 7px;
+  padding-inline: 15px;
+  padding-block: 5px;
+  &:hover {
+    background-color: var(--bacground-blue);
+  }
+}
