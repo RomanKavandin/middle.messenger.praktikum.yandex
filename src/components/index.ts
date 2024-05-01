@@ -1,12 +1,11 @@
 export { Button } from "./button";
+export { ChatButton } from "./chatButton";
 export { Input } from "./input";
 export { UserPageInput } from "./userPageInput";
 export { UserPageInputData } from "./userPageInput";
+export { PopUpForm } from "./popUpForm";
 export { Sider } from "./sider";
 export { SiderItem } from "./siderItem";
-export { ChatBody } from "./chatBody";
 export { ChatCard } from "./chatCard";
-export { ContextMenuAttach } from "./contextMenu/contextMenu";
-export { ContextMenuManageUser } from "./contextMenu/contextMenu";
-export { ContextMenuButton } from "./contextMenuButton";
-export { PopUpForm } from "./popUpForm";
+export { ChatBody } from "./chatBody";
+export { ContextMenu } from "./contextMenu";

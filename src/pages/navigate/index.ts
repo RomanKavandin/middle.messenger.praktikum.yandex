@@ -1,2 +1,3 @@
 import "./navigate.css";
-export { default as NavigatePage } from "./navigate.hbs?raw";
+import Navigate from "./Navigate";
+export default Navigate;
